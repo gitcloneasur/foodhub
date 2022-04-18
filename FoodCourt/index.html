@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+  <title>CFC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/cfc.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS CODE -->
+<style type="text/css">
+body{
+	/*background-color: #f1f5f7;*/
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.btn1{
+	float: right;
+    margin-right: 70px;
+    margin-top: 10px;
+    color:#FFF;
+}
+.btn{
+	margin-right:20px;
+}
+.logo{
+	height:120px;
+	width:120px;
+	margin:0 auto;
+	margin-top: 45px;
+	text-align:center;
+	padding:20px 10px;
+	background-color: #B22222	;
+	color: #FFF;
+	border-radius:4px;
+}
+.header{
+background-image: url("images/order_background.jpg");
+background-size: cover;
+height:450px;
+}
+.sub_header{
+	color: rgba(255,255,255,.9);
+    font-size: 20px;
+    margin-top: 5px;
+}
+.text-center{
+	font-size: 30px;
+	margin-top: 35px;
+}
+form{
+	margin-left:20%;
+	margin-top: 55px;
+}
+.col-xs-6{
+	margin-right: 10px;
+}
+.mid{
+	margin-top: 45px;
+}
+.speciality .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.speciality .box-container .box{
+  flex:1 1 30rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border:.1rem solid rgba(0,0,0,.3);
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.speciality .box-container .box .image{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  position: absolute;
+  top:-100%; left:0;
+}
+
+.speciality .box-container .box .content{
+  text-align: center;
+  background:#fff;
+  padding:2rem;
+}
+
+.speciality .box-container .box .content img{
+  margin:1.5rem 0;
+}
+
+.speciality .box-container .box .content h3{
+  font-size: 2.5rem;
+  color:#333;
+}
+
+.speciality .box-container .box .content p{
+  font-size: 1.6rem;
+  color:#666;
+  padding:1rem 0;
+}
+
+.speciality .box-container .box:hover .image{
+  top:0;
+}
+
+.speciality .box-container .box:hover .content{
+  transform: translateY(100%);
+}
+.mid_heading{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 30px;
+}
+.mid_sub_heading{
+	text-align: center;
+	font-size: 18px;
+
+}
+.cap{
+	text-align:center;
+	font-size: 18px;
+	margin-top: 30px;
+}
+.wrapper{
+	background-color: #fafafa;;
+}
+.sub_text{
+	font-size:18px;
+	text-align: left;
+}
+.iconn{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.iconn1{
+	margin-left: -100px;
+}
+
+.logo1{
+	height:60px;
+	width:60px;
+	margin:0 120px;
+	margin-top: 45px;
+	text-align:center;
+	padding:20px 10px;
+	background-color: #B22222	;
+	color: #FFF;
+	border-radius:4px;
+	}
+		ul{
+		margin:0 auto;
+		list-style-type: none;
+	}
+	li{
+		margin:9px;
+		color:black;
+	}
+	a{
+		color: black;
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: none;
+		color: black;
+	}
+.footer{
+
+    background-color: #282C35;
+    border-top: 1px solid #eee;
+   	}
+	.footer_divider{
+		border-top:1px solid #3C3F46	;
+		width:1140px;
+		margin: 5px auto;
+	}
+	.footer_bottom li{
+		float:left;
+	}
+	.footer li{
+		color: #cdcdcd;
+	}
+	.footer h3{
+		color:#ADB0B6;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	.footer_list{
+		height: 35px;
+    padding-left: 55px;
+	}
+</style>
+<!-- END OF CSS -->
+</head>
+<body>
+	<!-- start of header section -->
+	<div class="header">
+		<div class="row">
+			<div class="btn1">
+			<button type="button" class="btn btn-default">Log in</button>
+			<button type="button" class="btn btn-default">sign up</button>
+		    </div>
+		</div>
+	
+	<div class="middle">
+
+		<div class="logo">
+		<h3 style="font-size: 30px;">CFC</h3> 
+		</div>
+		<div class="text-center">
+			<h1 style="font-size: 30px; margin-top: 50px; color:rgb(0, 0, 0); font-weight: 600;"><b>Order Food Online From Any Corner Of CGU</b></h1>
+			<!-- <div class="sub_header">
+				Enter your delivery location to get started
+			</div> -->
+		</div>
+		<form>
+			<div class="col-xs-6" style="padding-left: 90px;margin-top: -30px;">
+				<div class="input-group">
+					<span class="input-group-addon"></span>
+					<input type="text-box" class="form-control" id="loc" placeholder="Enter your dishes....." style="min-height: 45px;">	
+				</div>
+				<button type="button" class="btn btn-danger" style="margin-left: 500px;margin-top: -70px; min-height: 45px; width: 120px; font-size: 17px;">Find Food</button>
+			</div>
+	</form>
+	</div>
+	</div>
+	<!-- end of header section -->
+<!-- start of first speciality section -->
+<section class="speciality" id="speciality">
+	<center>
+    <h1 class="heading"><span>FAMOUS ITEMS</span> </h1>
+</center>
+    <div class="box-container">
+
+        <div class="box">
+            <img class="image" src="images/momo.jpg" alt="">
+            <div class="content">
+                <h3>MOMO</h3>
+                <p>Momo is a type of dumpling originally from Tibet which is prominently found in the cuisines of Tibet and Nepal, as well as in the Indian states of Ladakh and Sikkim.</p>
+			</div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/chowmein.jpg" alt="">
+            <div class="content">
+                <h3>CHOWMEIN</h3>
+				<p>Chow mein are Chinese stir-fried noodles with vegetables and sometimes meat or tofu. chowmein is most famous in Nepal and india as a fast food.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/thukpa.jpg" alt="">
+            <div class="content">
+                <h3>THUPPA</h3>
+                <p>Thukpa is a Tibetan noodle soup, which originated in the eastern part of Tibet. Amdo thukpa is a famous variant amongst the Indians, Tibetans and the people of Nepal.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/sekuwa.jpg" alt="">
+            <div class="content">
+                <h3>SEKUWA</h3>
+                <p>Sekuwa is meat roasted in a natural wood fire in a traditional Nepalese country style. While the meat is still raw, it is mixed with natural herbs and spices and other ingredients. Sekuwa can be made with pork, lamb, goat or chicken, or a mixture.</p>
+            </div>
+        </div>
+		<div class="box">
+            <img class="image" src="images/yomari.jpg" alt="">
+            <div class="content">
+                <h3>YOMARI</h3>
+                <p>Yomari, also called yamari, is a delicacy of the Newar community in Nepal. It is a steamed dumpling that consists of an external covering of rice flour with sweet fillings such as chaku.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/sewali.jpg" alt="">
+            <div class="content">
+                <h3>SEWALI</h3>
+                <p>sewali is a food where meat is inside of dumpling and it is fried in oil. <br><br><br><br></p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/bhakka.jpg" alt="">
+            <div class="content">
+                <h3>BHAKKA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/laphing.jpg" alt="">
+            <div class="content">
+                <h3>LAPHING</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+		<div class="box">
+            <img class="image" src="images/aila.jpg" alt="">
+            <div class="content">
+                <h3>AILA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/chyaang.jpg" alt="">
+            <div class="content">
+                <h3>CHYAANG</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/drinks.jpg" alt="">
+            <div class="content">
+                <h3>COLD DRINKS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/juice.jpg" alt="">
+            <div class="content">
+                <h3>JUICE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of first spacility section -->
+<!-- start of speciality section -->
+<br><br><br><br><br>
+<section class="speciality" id="speciality">
+	<center>
+    <h1 class="heading"> <span> FREQUENTLY ORDER FOODS</span> </h1>
+</center>
+    <div class="box-container">
+
+        <div class="box">
+            <img class="image" src="images/dosa.jpg" alt="">
+            <div class="content">
+                <h3>DOSA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/burger.jpg" alt="">
+            <div class="content">
+                <h3>BURGER</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/bhatura.jpg" alt="">
+            <div class="content">
+                <h3>CHOLEY BHATURA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/juice.jpg" alt="">
+            <div class="content">
+                <h3>JUICE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/sweets.jpg" alt="">
+            <div class="content">
+               <h3>SWEETS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/cream.jpg" alt="">
+            <div class="content">
+                <h3>ICE-CREAM</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of spacility section -->
+<!-- food court order -->
+	<div class="mid" style="background-color: white;">
+		<div class="mid_heading">
+			<b>How CGU FOOD COURT Order Works</b>
+		</div>
+		<div class="mid_sub_heading">
+			    Ordering food online has never been this easy
+		</div>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="images/food.png" id="icon">
+					<div class="cap"><b>search</b> your dishses</div>
+				</div>
+				<div class="col-sm-4">
+					<img src="images/menu.png" id="icon">
+					<div class="cap">Browse menus and <b>order</b> in seconds</div>
+				</div>
+				<div class="col-sm-4">
+					<img src="images/notif.png" id="icon">
+					<div class="cap">Get your order <b>status</b></div>
+				</div>
+	  		</div>
+   		</div>
+   	</div>
+<div class="wrapper">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-lg-6">
+				<img src="images/mobile1.png" width="300px" height="282.78px" class="iconn">
+			</div>
+			<div class="col-lg-6 iconn1">
+				<h2 style="font-weight: 400; text-align: left; font-size: 26px;">Download the CFC Order App!</h2>
+				<div class="sub_text">Get real-time order updates, live chat support,<br> and exclusive app-only offers.</div>
+				<div class="row">
+					<div class="col-lg-6 text-left">
+						<img src="images/app-store.png" width="121.36px" height="36px" >
+					</div>
+					<div class="col-lg-6 text-left">
+						<img src="images/play-store.png"  width="103.19px" height="36px" style="margin-left: -150px;">
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end of food court order -->
+<!-- footer -->
+	<div class="footer" style="min-height: 700px;">
+			<div class="wrap">
+				<div class="row">
+					<div class="col-m-10" style="width: 725px;">
+						<div class="logo1">
+							<h3 style="font-size: 15px; margin:3px -5px">CFC</h3>
+						</div>
+					</div>
+					<div class="col-m-6" style= "margin-top: -40px; margin-left: 1000px; width: 1200px;">
+						<div class="form-group" style="margin-left: 70px;">
+							<div class="input-group col-xs-2">
+								<span class="input-group-addon"> <i class="glyphicon glyphicon-globe"></i></span>
+									<select class="form-control">
+										<option>English</option>
+										<option>Nepali</option>
+										<option>Hindi</option>
+										<option>Japnese</option>
+										<option>Bangali</option>
+										<option>urdu</option>
+										<option>Maithali</option>
+									
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="footer_divider">
+			</div>
+
+			<div class="row">
+				<div class="col-m-4" style="padding-left: 90px;">
+					<h3 style="padding-left: 47px;">About CFC</h3>
+					<ul class="footer_links-1">
+						<li>About Us</li>
+						<li>Culture</li>
+						<li>Blog</li>
+						<li>Contact</li>
+					</ul>
+				</div>
+				<div class="col-m-5" style=" margin-top: -186px; margin-left: 360px;">
+					<h3 style="padding-left: 47px;">For Foodies</h3>
+					<ul class="footer-links-2">
+						<li>Code Of Conduct</li>
+						<li>Community</li>
+						<li>Verified Users</li>
+						<li>Blogger Help</li>
+						<li>developer</li>
+						<li>Mobile Apps</li>
+					</ul>
+				</div>
+		    <div class="footer_divider">
+			</div>
+
+			<div class="footer_list">
+   
+				<ul class="footer_bottom">
+					<li>Privacy</li>
+					<li>Terms</li>
+					<li>Security</li>
+					<li>contact</li>
+					
+				</ul>	
+				<ul class="footer_bottom">
+					<li>Copyright 2022 @ravi yadav</li>
+				</ul>
+
+			</div>
+
+			<div class="footer_divider"></div>		
+        </div>
+		<!-- end of footer -->
+</body>
+</html>
